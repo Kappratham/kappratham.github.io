@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pratham's portfolio showcasing Machine Learning and AI projects, including RAG systems and production APIs.">
+    <title>Pratham | ML Engineer Portfolio</title>
+    
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo">Pratham.</a>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact" class="btn btn-primary">Contact</a></li>
+                </ul>
+                <div class="burger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Machine Learning Engineer</h1>
+                    <p>Hi, I'm Pratham. I build intelligent systems from data to deployment, specializing in RAG architectures and production-ready ML pipelines.</p>
+                    <div class="hero-buttons">
+                        <a href="mailto:prathamrkapure@gmail.com" class="btn btn-primary">Hire Me</a>
+                        <a href="#projects" class="btn btn-secondary">My Work <i class="fas fa-arrow-down"></i></a>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/kappratham" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/prathamkapure" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:prathamrkapure@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="assets/images/profile.jpg" alt="Pratham">
+                    </div>
+                    <div class="about-text">
+                        <h2>About Me</h2>
+                        <p>I am a passionate Machine Learning Engineer dedicated to building end-to-end AI solutions that solve real-world problems. My expertise spans from classical machine learning to cutting-edge LLM applications, with a strong focus on creating robust, scalable, and production-ready systems.</p>
+                        <p>I enjoy the entire ML lifecycle, from initial data exploration and feature engineering to model deployment and monitoring. Recently, I've been diving deep into Retrieval-Augmented Generation (RAG) systems and deploying local LLMs, which has been incredibly rewarding. I'm always eager to learn new technologies and apply them to challenging projects.</p>
+                        <a href="YOUR_RESUME_LINK" target="_blank" class="btn btn-outline">Download Resume <i class="fas fa-download"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                
+                <!-- Project 1: RAG System -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/projects/rag-demo.png" alt="RAG Document Q&A System">
+                    </div>
+                    <div class="project-info">
+                        <h3>🤖 RAG Document Q&A System</h3>
+                        <p>An AI-powered system that lets you chat with your PDF documents. Built with LangChain and a locally deployed Llama 2 model, this RAG application provides accurate, cited answers, ensuring data privacy and zero API costs.</p>
+                        <div class="tech-stack">
+                            <span>Python</span><span>LangChain</span><span>Llama 2</span><span>ChromaDB</span><span>Streamlit</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/kappratham/rag-document-qa" target="_blank">View Code <i class="fab fa-github"></i></a>
+                            <a href="https://github.com/kappratham/rag-document-qa#readme" target="_blank">Read Docs <i class="fas fa-book-open"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Medical API -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/projects/medical-api.png" alt="Medical Appointment Prediction API">
+                    </div>
+                    <div class="project-info">
+                        <h3>🏥 Medical Appointment Prediction API</h3>
+                        <p>A production-grade REST API using FastAPI to predict patient no-shows for medical appointments. Trained on 110K records, it achieves 64% recall and includes batch processing and automated documentation.</p>
+                        <div class="tech-stack">
+                            <span>Python</span><span>FastAPI</span><span>scikit-learn</span><span>XGBoost</span><span>Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/kappratham/medical-appointment-predictor" target="_blank">View Code <i class="fab fa-github"></i></a>
+                            <a href="https://github.com/kappratham/medical-appointment-predictor#readme" target="_blank">Read Docs <i class="fas fa-book-open"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">My Toolbox</h2>
+                <div class="skills-grid">
+                    <div class="skill-item"><i class="fab fa-python"></i> Python</div>
+                    <div class="skill-item"><i class="fas fa-brain"></i> scikit-learn</div>
+                    <div class="skill-item"><i class="fas fa-robot"></i> PyTorch</div>
+                    <div class="skill-item"><i class="fas fa-link"></i> LangChain</div>
+                    <div class="skill-item"><i class="fas fa-server"></i> FastAPI</div>
+                    <div class="skill-item"><i class="fas fa-desktop"></i> Streamlit</div>
+                    <div class="skill-item"><i class="fas fa-database"></i> SQL</div>
+                    <div class="skill-item"><i class="fab fa-docker"></i> Docker</div>
+                    <div class="skill-item"><i class="fab fa-git-alt"></i> Git & GitHub</div>
+                    <div class="skill-item"><i class="fas fa-table"></i> pandas</div>
+                    <div class="skill-item"><i class="fas fa-cogs"></i> REST APIs</div>
+                    <div class="skill-item"><i class="fas fa-vector-square"></i> Vector DBs</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Let's Connect</h2>
+                <p>I'm open to new opportunities and collaborations. Feel free to reach out!</p>
+                <a href="mailto:prathamrkapure@gmail.com" class="btn btn-primary">Say Hello</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-social">
+                <a href="https://github.com/kappratham" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/prathamkapure" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:prathamrkapure@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2026 Pratham. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
