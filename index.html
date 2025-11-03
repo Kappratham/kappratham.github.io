@@ -6,12 +6,11 @@
     <meta name="description" content="Pratham's portfolio showcasing Machine Learning and AI projects, including RAG systems and production APIs.">
     <title>Pratham | ML Engineer Portfolio</title>
     
-    <!-- Font Awesome (for icons) -->
+    <!-- Libraries -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
     
     <!-- Custom CSS -->
@@ -19,7 +18,7 @@
 </head>
 <body>
     <!-- Header & Navigation -->
-    <header>
+    <header class="header">
         <nav class="navbar">
             <div class="container">
                 <a href="#" class="logo">Pratham.</a>
@@ -41,17 +40,12 @@
         <section id="home" class="hero">
             <div class="container">
                 <div class="hero-content">
-                    <h1>Machine Learning Engineer</h1>
-                    <p>Hi, I'm Pratham. I build intelligent systems from data to deployment, specializing in RAG architectures and production-ready ML pipelines.</p>
-                    <div class="hero-buttons">
-                        <a href="mailto:prathamrkapure@gmail.com" class="btn btn-primary">Hire Me</a>
-                        <a href="#projects" class="btn btn-secondary">My Work <i class="fas fa-arrow-down"></i></a>
+                    <h1 data-aos="fade-down">Machine Learning Engineer</h1>
+                    <p data-aos="fade-up" data-aos-delay="200">Hi, I'm Pratham. I build intelligent systems from data to deployment, specializing in RAG architectures and production-ready ML pipelines.</p>
+                    <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+                        <a href="#projects" class="btn btn-primary">My Work <i class="fas fa-arrow-right"></i></a>
+                        <a href="YOUR_RESUME_LINK" target="_blank" class="btn btn-secondary">View Resume</a>
                     </div>
-                </div>
-                <div class="social-links">
-                    <a href="https://github.com/kappratham" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/prathamkapure" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="mailto:prathamrkapure@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
         </section>
@@ -60,14 +54,18 @@
         <section id="about" class="about">
             <div class="container">
                 <div class="about-content">
-                    <div class="about-image">
+                    <div class="about-image" data-aos="fade-right">
                         <img src="assets/images/profile.jpg" alt="Pratham">
                     </div>
-                    <div class="about-text">
-                        <h2>About Me</h2>
+                    <div class="about-text" data-aos="fade-left">
+                        <h2 class="section-title">About Me</h2>
                         <p>I am a passionate Machine Learning Engineer dedicated to building end-to-end AI solutions that solve real-world problems. My expertise spans from classical machine learning to cutting-edge LLM applications, with a strong focus on creating robust, scalable, and production-ready systems.</p>
-                        <p>I enjoy the entire ML lifecycle, from initial data exploration and feature engineering to model deployment and monitoring. Recently, I've been diving deep into Retrieval-Augmented Generation (RAG) systems and deploying local LLMs, which has been incredibly rewarding. I'm always eager to learn new technologies and apply them to challenging projects.</p>
-                        <a href="https://drive.google.com/file/d/1WgGSAMsM20-bWQMYug-tl6LgkfdusaYn/view?usp=drive_link" target="_blank" class="btn btn-outline">Download Resume <i class="fas fa-download"></i></a>
+                        <p>I enjoy the entire ML lifecycle, from initial data exploration and feature engineering to model deployment and monitoring. I'm always eager to learn new technologies and apply them to challenging projects.</p>
+                        <div class="social-links">
+                            <a href="https://github.com/kappratham" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com/in/prathamkapure" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="mailto:prathamrkapure@gmail.com"><i class="fas fa-envelope"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -76,52 +74,52 @@
         <!-- Projects Section -->
         <section id="projects" class="projects">
             <div class="container">
-                <h2 class="section-title">Featured Projects</h2>
+                <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
                 
-                <!-- Project 1: RAG System -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assets/projects/rag-demo.png" alt="RAG Document Q&A System">
-                    </div>
-                    <div class="project-info">
-                        <h3>🤖 RAG Document Q&A System</h3>
-                        <p>An AI-powered system that lets you chat with your PDF documents. Built with LangChain and a locally deployed Llama 2 model, this RAG application provides accurate, cited answers, ensuring data privacy and zero API costs.</p>
-                        <div class="tech-stack">
-                            <span>Python</span><span>LangChain</span><span>Llama 2</span><span>ChromaDB</span><span>Streamlit</span>
+                <div class="project-grid">
+                    <!-- Project 1: RAG System -->
+                    <div class="project-card" data-aos="fade-up">
+                        <div class="project-image">
+                            <img src="assets/projects/rag-demo.png" alt="RAG System Demo">
                         </div>
-                        <div class="project-links">
-                            <a href="https://github.com/kappratham/rag-document-qa" target="_blank">View Code <i class="fab fa-github"></i></a>
-                            <a href="https://github.com/kappratham/rag-document-qa#readme" target="_blank">Read Docs <i class="fas fa-book-open"></i></a>
+                        <div class="project-info">
+                            <h3>🤖 RAG Document Q&A System</h3>
+                            <p>An AI system to chat with your PDFs using LangChain and a locally-deployed Llama 2. Features vector search, source citations, and a Streamlit UI.</p>
+                            <div class="tech-stack">
+                                <span>LangChain</span><span>Llama 2</span><span>ChromaDB</span><span>Streamlit</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/kappratham/rag-document-qa" target="_blank" class="project-link">View Code <i class="fas fa-external-link-alt"></i></a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Project 2: Medical API -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assets/projects/medical-api.png" alt="Medical Appointment Prediction API">
-                    </div>
-                    <div class="project-info">
-                        <h3>🏥 Medical Appointment Prediction API</h3>
-                        <p>A production-grade REST API using FastAPI to predict patient no-shows for medical appointments. Trained on 110K records, it achieves 64% recall and includes batch processing and automated documentation.</p>
-                        <div class="tech-stack">
-                            <span>Python</span><span>FastAPI</span><span>scikit-learn</span><span>XGBoost</span><span>Docker</span>
+                    <!-- Project 2: Medical API -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-image">
+                            <img src="assets/projects/medical-api.png" alt="Medical API Docs">
                         </div>
-                        <div class="project-links">
-                            <a href="https://github.com/kappratham/medical-appointment-predictor" target="_blank">View Code <i class="fab fa-github"></i></a>
-                            <a href="https://github.com/kappratham/medical-appointment-predictor#readme" target="_blank">Read Docs <i class="fas fa-book-open"></i></a>
+                        <div class="project-info">
+                            <h3>🏥 Medical Prediction API</h3>
+                            <p>A production REST API with FastAPI to predict patient no-shows. Trained on 110K records, achieving 64% recall. Includes batch processing and auto-docs.</p>
+                            <div class="tech-stack">
+                                <span>FastAPI</span><span>scikit-learn</span><span>XGBoost</span><span>Docker</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/kappratham/medical-appointment-predictor" target="_blank" class="project-link">View Code <i class="fas fa-external-link-alt"></i></a>
+                            </div>
                         </div>
                     </div>
+                    <!-- Add more project cards here -->
                 </div>
-                
             </div>
         </section>
 
         <!-- Skills Section -->
         <section id="skills" class="skills">
             <div class="container">
-                <h2 class="section-title">My Toolbox</h2>
-                <div class="skills-grid">
+                <h2 class="section-title" data-aos="fade-up">My Toolbox</h2>
+                <div class="skills-grid" data-aos="fade-up" data-aos-delay="200">
                     <div class="skill-item"><i class="fab fa-python"></i> Python</div>
                     <div class="skill-item"><i class="fas fa-brain"></i> scikit-learn</div>
                     <div class="skill-item"><i class="fas fa-robot"></i> PyTorch</div>
@@ -140,10 +138,10 @@
 
         <!-- Contact Section -->
         <section id="contact" class="contact">
-            <div class="container">
-                <h2 class="section-title">Let's Connect</h2>
-                <p>I'm open to new opportunities and collaborations. Feel free to reach out!</p>
-                <a href="mailto:prathamrkapure@gmail.com" class="btn btn-primary">Say Hello</a>
+            <div class="container" data-aos="zoom-in">
+                <h2>Let's Build Something Great Together</h2>
+                <p>I'm currently seeking new opportunities in Machine Learning and AI. If you have a project in mind or just want to connect, feel free to reach out.</p>
+                <a href="mailto:prathamrkapure@gmail.com" class="btn btn-primary">Get In Touch</a>
             </div>
         </section>
     </main>
@@ -151,15 +149,15 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-social">
-                <a href="https://github.com/kappratham" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/prathamkapure" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:prathamrkapure@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-            </div>
-            <p>&copy; 2026 Pratham. All rights reserved.</p>
+            <p>&copy; 2024 Pratham. All rights reserved.</p>
         </div>
     </footer>
 
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
