@@ -3,161 +3,316 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pratham's portfolio showcasing Machine Learning and AI projects, including RAG systems and production APIs.">
-    <title>Pratham | ML Engineer Portfolio</title>
-    
-    <!-- Libraries -->
+    <meta name="description" content="Pratham Kapure — AI/ML Engineer specializing in LLM systems, RAG pipelines, and production AI.">
+    <title>Pratham Kapure | AI Engineer</title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
-    
-    <!-- Custom CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header & Navigation -->
-    <header class="header">
-        <nav class="navbar">
-            <div class="container">
-                <a href="#" class="logo">Pratham.</a>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact" class="btn btn-primary">Contact</a></li>
-                </ul>
-                <div class="burger">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </div>
-        </nav>
-    </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <h1 data-aos="fade-down">Machine Learning Engineer</h1>
-                    <p data-aos="fade-up" data-aos-delay="200">Hi, I'm Pratham. I build intelligent systems from data to deployment, specializing in RAG architectures and production-ready ML pipelines.</p>
-                    <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
-                        <a href="#projects" class="btn btn-primary">My Work <i class="fas fa-arrow-right"></i></a>
-                        <a href="YOUR_RESUME_LINK" target="_blank" class="btn btn-secondary">View Resume</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+<!-- Animated canvas background -->
+<canvas id="bg-canvas"></canvas>
 
-        <!-- About Me Section -->
-        <section id="about" class="about">
-            <div class="container">
-                <div class="about-content">
-                    <div class="about-image" data-aos="fade-right">
-                        <img src="assets/images/profile.jpg" alt="Pratham">
-                    </div>
-                    <div class="about-text" data-aos="fade-left">
-                        <h2 class="section-title">About Me</h2>
-                        <p>I am a passionate Machine Learning Engineer dedicated to building end-to-end AI solutions that solve real-world problems. My expertise spans from classical machine learning to cutting-edge LLM applications, with a strong focus on creating robust, scalable, and production-ready systems.</p>
-                        <p>I enjoy the entire ML lifecycle, from initial data exploration and feature engineering to model deployment and monitoring. I'm always eager to learn new technologies and apply them to challenging projects.</p>
-                        <div class="social-links">
-                            <a href="https://github.com/kappratham" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="https://linkedin.com/in/prathamkapure" target="_blank"><i class="fab fa-linkedin"></i></a>
-                            <a href="mailto:prathamrkapure@gmail.com"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+<!-- Scanline overlay -->
+<div class="scanlines"></div>
 
-        <!-- Projects Section -->
-        <section id="projects" class="projects">
-            <div class="container">
-                <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
-                
-                <div class="project-grid">
-                    <!-- Project 1: RAG System -->
-                    <div class="project-card" data-aos="fade-up">
-                        <div class="project-image">
-                            <img src="assets/projects/rag-demo.png" alt="RAG System Demo">
-                        </div>
-                        <div class="project-info">
-                            <h3>🤖 RAG Document Q&A System</h3>
-                            <p>An AI system to chat with your PDFs using LangChain and a locally-deployed Llama 2. Features vector search, source citations, and a Streamlit UI.</p>
-                            <div class="tech-stack">
-                                <span>LangChain</span><span>Llama 2</span><span>ChromaDB</span><span>Streamlit</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/kappratham/rag-document-qa" target="_blank" class="project-link">View Code <i class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 2: Medical API -->
-                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                        <div class="project-image">
-                            <img src="assets/projects/medical-api.png" alt="Medical API Docs">
-                        </div>
-                        <div class="project-info">
-                            <h3>🏥 Medical Prediction API</h3>
-                            <p>A production REST API with FastAPI to predict patient no-shows. Trained on 110K records, achieving 64% recall. Includes batch processing and auto-docs.</p>
-                            <div class="tech-stack">
-                                <span>FastAPI</span><span>scikit-learn</span><span>XGBoost</span><span>Docker</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/kappratham/medical-appointment-predictor" target="_blank" class="project-link">View Code <i class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Add more project cards here -->
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="skills">
-            <div class="container">
-                <h2 class="section-title" data-aos="fade-up">My Toolbox</h2>
-                <div class="skills-grid" data-aos="fade-up" data-aos-delay="200">
-                    <div class="skill-item"><i class="fab fa-python"></i> Python</div>
-                    <div class="skill-item"><i class="fas fa-brain"></i> scikit-learn</div>
-                    <div class="skill-item"><i class="fas fa-robot"></i> PyTorch</div>
-                    <div class="skill-item"><i class="fas fa-link"></i> LangChain</div>
-                    <div class="skill-item"><i class="fas fa-server"></i> FastAPI</div>
-                    <div class="skill-item"><i class="fas fa-desktop"></i> Streamlit</div>
-                    <div class="skill-item"><i class="fas fa-database"></i> SQL</div>
-                    <div class="skill-item"><i class="fab fa-docker"></i> Docker</div>
-                    <div class="skill-item"><i class="fab fa-git-alt"></i> Git & GitHub</div>
-                    <div class="skill-item"><i class="fas fa-table"></i> pandas</div>
-                    <div class="skill-item"><i class="fas fa-cogs"></i> REST APIs</div>
-                    <div class="skill-item"><i class="fas fa-vector-square"></i> Vector DBs</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
-            <div class="container" data-aos="zoom-in">
-                <h2>Let's Build Something Great Together</h2>
-                <p>I'm currently seeking new opportunities in Machine Learning and AI. If you have a project in mind or just want to connect, feel free to reach out.</p>
-                <a href="mailto:prathamrkapure@gmail.com" class="btn btn-primary">Get In Touch</a>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
+<!-- Header -->
+<header class="header" id="header">
+    <nav class="navbar">
         <div class="container">
-            <p>&copy; 2024 Pratham. All rights reserved.</p>
+            <a href="#home" class="logo"><span class="accent">&gt;</span> pratham<span class="blink">_</span></a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about"><span class="nav-num">01.</span> about</a></li>
+                <li><a href="#projects"><span class="nav-num">02.</span> projects</a></li>
+                <li><a href="#skills"><span class="nav-num">03.</span> skills</a></li>
+                <li><a href="#contact" class="btn-nav">contact</a></li>
+            </ul>
+            <div class="burger" id="burger">
+                <span></span><span></span><span></span>
+            </div>
         </div>
-    </footer>
+    </nav>
+</header>
 
-    <!-- Back to Top Button -->
-    <a href="#home" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+<main>
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-tag">
+                    <span class="tag-dot"></span>
+                    available for work
+                </div>
+                <h1>
+                    <span class="line-one">Building AI</span>
+                    <span class="line-two">Systems That <span class="glitch" data-text="Matter.">Matter.</span></span>
+                </h1>
+                <p class="hero-sub">I'm <strong>Pratham Kapure</strong> — AI Engineer specializing in LLM-powered systems, RAG pipelines, and production ML backends. I build things that hold up when it matters.</p>
 
-    <!-- Scripts -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="script.js"></script>
+                <div class="terminal-snippet">
+                    <div class="terminal-bar">
+                        <span class="t-dot red"></span>
+                        <span class="t-dot yellow"></span>
+                        <span class="t-dot green"></span>
+                        <span class="t-title">pratham@ai-engineer ~ </span>
+                    </div>
+                    <div class="terminal-body">
+                        <p><span class="t-prompt">$</span> <span class="t-cmd" id="typed-cmd"></span><span class="t-cursor">|</span></p>
+                        <p class="t-output" id="typed-output"></p>
+                    </div>
+                </div>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects <i class="fas fa-arrow-right"></i></a>
+                    <a href="https://github.com/kappratham" target="_blank" class="btn btn-ghost"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <span class="stat-num">110K</span>
+                    <span class="stat-label">Records processed</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-num">64%</span>
+                    <span class="stat-label">Minority class recall</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-num">40%</span>
+                    <span class="stat-label">Memory reduction</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-num">$614K</span>
+                    <span class="stat-label">Estimated impact</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">01</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image-wrap">
+                    <div class="about-img-box">
+                        <div class="img-placeholder">
+                            <i class="fas fa-user-astronaut"></i>
+                            <span>Pratham Kapure</span>
+                        </div>
+                        <div class="img-border"></div>
+                    </div>
+                    <div class="about-badges">
+                        <span class="badge"><i class="fas fa-map-marker-alt"></i> Pune, India</span>
+                        <span class="badge"><i class="fas fa-graduation-cap"></i> MCA — Dr DY Patil</span>
+                        <span class="badge"><i class="fas fa-briefcase"></i> AI/ML Intern @ Gilbert RC</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>I'm an AI engineer who learned most of what I know by breaking things at 2am and figuring out why. I build end-to-end systems — from raw data to deployed APIs — with a focus on making AI honest, reliable, and actually useful in production.</p>
+                    <p>My real transcript is my GitHub. Every project I've shipped has taught me something no classroom could — catching data leakage before it ships, debugging hallucinations at the retrieval layer, quantizing models to run on real-world hardware.</p>
+                    <p>Currently building <strong>Soulbound</strong> — an AI-powered dating platform designed to get users into relationships faster, not keep them scrolling.</p>
+                    <div class="about-links">
+                        <a href="https://github.com/kappratham" target="_blank" class="social-btn"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/prathamkapure" target="_blank" class="social-btn"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:prathamrkapure@gmail.com" class="social-btn"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">02</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="project-grid">
+
+                <!-- Project 1 -->
+                <div class="project-card featured">
+                    <div class="project-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80" alt="RAG System" onerror="this.src='assets/projects/rag-demo.png'">
+                        <div class="project-overlay">
+                            <span class="project-tag">RAG · LLM · NLP</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-header-row">
+                            <h3>RAG Document Q&A System</h3>
+                            <a href="https://github.com/kappratham/rag-document-qa" target="_blank" class="project-icon-link"><i class="fab fa-github"></i></a>
+                        </div>
+                        <p>Conversational AI over research documents with source citation tracking. Deployed quantized LLaMA-2 locally via Ollama — cutting memory usage by 40% without sacrificing output quality.</p>
+                        <div class="tech-stack">
+                            <span>LangChain</span><span>LLaMA-2</span><span>ChromaDB</span><span>Ollama</span><span>Streamlit</span>
+                        </div>
+                        <div class="project-metrics">
+                            <span><i class="fas fa-memory"></i> 40% memory reduction</span>
+                            <span><i class="fas fa-quote-right"></i> Source citation tracking</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card featured">
+                    <div class="project-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&q=80" alt="Medical Prediction API" onerror="this.src='assets/projects/medical-api.png'">
+                        <div class="project-overlay">
+                            <span class="project-tag">ML · FastAPI · XGBoost</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-header-row">
+                            <h3>Medical No-Show Prediction API</h3>
+                            <a href="https://github.com/kappratham/medical-appointment-predictor" target="_blank" class="project-icon-link"><i class="fab fa-github"></i></a>
+                        </div>
+                        <p>Production ML pipeline on 110K appointment records. Caught and fixed subtle data leakage using time-aware feature construction — something that would've silently broken the model in production.</p>
+                        <div class="tech-stack">
+                            <span>FastAPI</span><span>XGBoost</span><span>scikit-learn</span><span>Pydantic</span><span>Docker</span>
+                        </div>
+                        <div class="project-metrics">
+                            <span><i class="fas fa-chart-line"></i> 64% minority recall</span>
+                            <span><i class="fas fa-dollar-sign"></i> $614K estimated impact</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80" alt="CareOps">
+                        <div class="project-overlay">
+                            <span class="project-tag">Full Stack · Node · React</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-header-row">
+                            <h3>CareOps — Workflow Platform</h3>
+                            <a href="https://github.com/kappratham/careops" target="_blank" class="project-icon-link"><i class="fab fa-github"></i></a>
+                        </div>
+                        <p>Full-stack operations and workflow management platform. Built modular from day one — designed with an extensible architecture ready for AI automation layer integration.</p>
+                        <div class="tech-stack">
+                            <span>Next.js</span><span>Node.js</span><span>MongoDB</span><span>Tailwind</span><span>REST</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 — Soulbound -->
+                <div class="project-card">
+                    <div class="project-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&q=80" alt="Soulbound">
+                        <div class="project-overlay">
+                            <span class="project-tag">AI · pgvector · Matching</span>
+                        </div>
+                        <div class="wip-badge">In Progress</div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-header-row">
+                            <h3>Soulbound — AI Dating Platform</h3>
+                            <a href="https://github.com/kappratham" target="_blank" class="project-icon-link"><i class="fab fa-github"></i></a>
+                        </div>
+                        <p>Anti-Tinder dating app: 3 AI-curated matches per day. Nightly bilateral scheduler using pgvector similarity. Built to get users into relationships, not keep them scrolling.</p>
+                        <div class="tech-stack">
+                            <span>pgvector</span><span>LLM</span><span>Node.js</span><span>React Native</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">03</span>
+                <h2 class="section-title">Tech Stack</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="skills-categories">
+                <div class="skill-category">
+                    <h4 class="cat-title"><i class="fas fa-brain"></i> AI / ML</h4>
+                    <div class="skill-pills">
+                        <span>LangChain</span><span>LLaMA-2</span><span>Ollama</span><span>HuggingFace</span>
+                        <span>scikit-learn</span><span>XGBoost</span><span>PyTorch</span><span>ChromaDB</span>
+                        <span>RAG</span><span>Prompt Engineering</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4 class="cat-title"><i class="fas fa-server"></i> Backend</h4>
+                    <div class="skill-pills">
+                        <span>Python</span><span>FastAPI</span><span>Node.js</span><span>Express</span>
+                        <span>REST APIs</span><span>Pydantic</span><span>OpenAPI</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4 class="cat-title"><i class="fas fa-database"></i> Data & DB</h4>
+                    <div class="skill-pills">
+                        <span>PostgreSQL</span><span>MongoDB</span><span>pgvector</span><span>SQL</span>
+                        <span>Pandas</span><span>NumPy</span><span>Vector DBs</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4 class="cat-title"><i class="fas fa-tools"></i> Tools & DevOps</h4>
+                    <div class="skill-pills">
+                        <span>Docker</span><span>Git</span><span>GitHub</span><span>Postman</span>
+                        <span>Google Colab</span><span>Linux</span><span>Cursor</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="certs-row">
+                <h4 class="cat-title" style="text-align:center; margin-bottom: 1.5rem;"><i class="fas fa-certificate"></i> Certifications</h4>
+                <div class="cert-cards">
+                    <div class="cert-card"><i class="fas fa-cloud"></i> CompTIA Cloud+</div>
+                    <div class="cert-card"><i class="fas fa-network-wired"></i> CompTIA Network+</div>
+                    <div class="cert-card"><i class="fas fa-shield-alt"></i> Ethical Hacking</div>
+                    <div class="cert-card"><i class="fas fa-project-diagram"></i> CCNA</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-inner">
+                <span class="contact-tag">// what's next?</span>
+                <h2>Let's Build Something Real</h2>
+                <p>I'm actively looking for AI engineering roles where the bar is genuinely high. If you're building something serious — reach out.</p>
+                <div class="contact-buttons">
+                    <a href="mailto:prathamrkapure@gmail.com" class="btn btn-primary">Get In Touch <i class="fas fa-paper-plane"></i></a>
+                    <a href="https://github.com/kappratham" target="_blank" class="btn btn-ghost"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+                <div class="contact-info">
+                    <span><i class="fas fa-envelope"></i> prathamrkapure@gmail.com</span>
+                    <span><i class="fas fa-phone"></i> +91 9960108676</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Pune, India</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>Designed & built by <span class="accent">Pratham Kapure</span> &nbsp;·&nbsp; <span class="accent">2025</span></p>
+    </div>
+</footer>
+
+<a href="#home" class="back-to-top" id="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+<script src="script.js"></script>
 </body>
 </html>
